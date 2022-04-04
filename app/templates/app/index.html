@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e1807ed9b8.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="main">
+    <h3>오늘매출현황</h3>
+    <a href="#" class="menu_box">
+        <dt class="big-text">주문</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">결제</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle">
+            <i class="fa-solid fa-credit-card fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">주문취소</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle">
+            <i class="fa-solid fa-trash fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">교환요청</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle">
+            <i class="fa-solid fa-arrow-right-arrow-left fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">환불요청</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle">
+            <i class="fa-solid fa-recycle fa-2x"></i>
+        </dl>
+    </a>
+</div>
+<div class="main">
+    <h3>오늘주문현황</h3>
+    <a href="#" class="menu_box">
+        <dt class="big-text">입금확인</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle-1">
+            <i class="fa-solid fa-hand-holding-dollar fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">배송준비중</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle-1">
+            <i class="fa-solid fa-trailer fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">배송대기</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle-1">
+        <i class="fa-solid fa-truck-pickup fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">배송중</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle-1">
+            <i class="fa-solid fa-truck-moving fa-2x"></i>
+        </dl>
+    </a>
+    <a href="#" class="menu_box">
+        <dt class="big-text">배송완료</dt>
+        <dd class="md-text">0원</dd>
+        <dl class="circle-1">
+            <i class="fa-solid fa-thumbs-up fa-2x"></i>
+        </dl>
+    </a>
+</div>
+<div class="half_main">
+    <a href="#" class="sub_box">재고관리</a>
+
+    <a href="#" class="sub_box2">상품등록</a>
+
+    <a href="#" class="sub_box">상품수정</a>
+
+    <a href="#" class="sub_box">몰기본설정</a>
+</div>
+
+<div id="content1" class="tabscontent" style="display: block;">
+					<a class="btn_clink" href="#">more</a>
+					<ul class="dot_li">
+						<li><a href="#">[190917] 이민희님의 문의글입니다.</a></li>
+						<li><a href="#">[190917] 이민희님의 문의글입니다</a></li>
+						<li><a href="#">[190917] 이민희님의 문의글입니다</a></li>
+						<li><a href="#">[190917] 이민희님의 문의글입니다</a></li>
+						<li><a href="#">[190917] 이민희님의 문의글입니다</a></li>
+					</ul>
+				</div>
+</body>
+</html>
